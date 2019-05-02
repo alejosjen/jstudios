@@ -5,28 +5,22 @@ import "./style.css";
 
 
 class Home extends Component {
-   
+
 
     render() {
         return (
-            
-                <div>
-                    <Nav />
+
+            <div>
+                <Nav />
                 <Slide left>
-                    <div className="container d-flex justify-content-center">
-                        <div className="homeBackground d-flex justify-content-center">
-                            <div className="homeArea">
-                                <div className="homeTitle text-center">
-                                    <p>Welcome</p>
-                                    <p>Want an online presence for your business?</p>
-                                    <p>I'll teach you the tools you need to keep up</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="text-center">
+                        <p>Welcome</p>
+                        <p>Want an online presence for your business?</p>
+                        <p>I'll teach you the tools you need to keep up</p>
                     </div>
-                    </Slide>
-                </div>
-            
+                </Slide>
+            </div>
+
         )
     }
 }

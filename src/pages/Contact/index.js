@@ -5,26 +5,22 @@ import "./style.css";
 
 
 class Contact extends Component {
-   
+
 
     render() {
         return (
-            
-                <div>
-                    <Nav />
+
+            <div>
+                <Nav />
                 <Slide left>
-                    <div className="container d-flex justify-content-center">
-                        <div className="homeBackground d-flex justify-content-center">
-                            <div className="homeArea">
-                                <div className="homeTitle text-center">
-                                    <p>Contact Me</p>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div className="text-center">
+                        <p>Contact Me</p>
                     </div>
-                    </Slide>
-                </div>
-            
+
+                </Slide>
+            </div>
+
         )
     }
 }

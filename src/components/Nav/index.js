@@ -1,72 +1,61 @@
 import React, { Component } from "react";
-import {
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
+import logo from '../../jstudioslogo_medium.svg';
 import "./style.css";
 
 class Nav extends Component {
-  state = {
-    open: false
-  }
-  
-  render() {
 
+  state = {
+    // open: false,
+    width: window.innerWidth,
+  };
+
+  render() {
     return (
-      <nav className="navbar navbar-expand-lg bg-light fixed-top navbar-light mb-2">
-        <Link className="navbar-brand" to="/">
-          Order Me This
-        </Link>
-        <button
-          onClick={this.toggleNav}
-          className="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className={`${this.state.open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link
-                onClick={this.toggleNav}
-                className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
-                to="/"
-              >
-                Home
+      <nav className="navbar">
+        <div className="d-flex justify-content-center align-items-center">
+          <span className="navbar-text navbar-title">
+          <Link
+              onClick={this.toggleNav}
+              className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
+              to="/"
+            >
+            <img src={logo} alt="logo"/>
               </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-                onClick={this.toggleNav}
-                className={window.location.pathname === "/work" ? "nav-link active" : "nav-link"}
-                to={`/work`}
-              >
-                Examples
+          </span>
+          <span className="navbar-text mx-3 homeLink">
+            <Link
+              onClick={this.toggleNav}
+              className={window.location.pathname === "/home" ? "nav-link active" : "nav-link"}
+              to="/home"
+            >
+              Home
               </Link>
-            </li>
-            <li className="nav-item">
-              <Link
-              onClick={this.logout}
+          </span>
+          <span className="navbar-text workLink">
+            <Link
+              onClick={this.toggleNav}
+              className={window.location.pathname === "/work" ? "nav-link active" : "nav-link"}
+              to={`/work`}
+            >
+              Examples
+              </Link>
+          </span>
+          <span className="navbar-text contactLink">
+            <Link
+              onClick={this.toggleNav}
               className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}
               to="/contact"
             >
-                Contact
+              Contact
               </Link>
-            </li>
-
-
-
-
-          </ul>
+          </span>
         </div>
-      </nav >
+      </nav>
+   
+
     );
   }
 }
 
 export default Nav;
-
-
