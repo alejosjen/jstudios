@@ -2,13 +2,13 @@
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #0F31FF;
+    background-color: rgb(4, 160, 255);
     padding: 50px;
     margin-bottom: 50px;
 }
 
 .row {
-    background-color: #0F31FF;
+    background-color: rgb(4, 160, 255);
     margin: 0px;
 }
 

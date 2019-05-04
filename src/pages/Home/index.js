@@ -19,16 +19,15 @@ class Home extends Component {
                                 <div className="col bottom-left-round">
                                     <p>Welcome</p>
                                     <p>Want an online presence for your business?</p>
-                                    <p>I'll teach you the tools you need to keep up</p>
-                                    <p>Let's find what's best for your business together. We'll review
-                                    how and where your business is being represented. Next we'll see where
+                                    <p>I'll teach you the tools you need.</p>
+                                    <p>We'll review how and where your business is being represented. Next we'll see where
                                     it can be improved.
                                 </p>
                                     <p>I'll meet you at your comfort level and guide you to the next.</p>
                                     <p></p>
                                     <p></p>
                                 </div>
-                                <div className="col top-right-round hidden-xs">
+                                <div className="col top-right-round">
                                     <img src={logo} className="img-fluid logo-large" alt="logo" />
                                 </div>
                             </div>
