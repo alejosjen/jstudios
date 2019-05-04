@@ -1,0 +1,31 @@
+.homeBackground {
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #0F31FF;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.row {
+    background-color: #0F31FF;
+    margin: 0px;
+}
+
+.col {
+    background-color: #fff;
+}
+
+.bottom-left-round { 
+    border-bottom-left-radius: 111px;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+}
+
+.top-right-round {
+    border-top-right-radius: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

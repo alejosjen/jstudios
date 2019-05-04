@@ -35,8 +35,8 @@ class Nav extends Component {
           <span className="navbar-text workLink">
             <Link
               onClick={this.toggleNav}
-              className={window.location.pathname === "/work" ? "nav-link active" : "nav-link"}
-              to={`/work`}
+              className={window.location.pathname === "/services" ? "nav-link active" : "nav-link"}
+              to={`/services`}
             >
               Examples
               </Link>
