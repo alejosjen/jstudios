@@ -13,7 +13,7 @@ class Nav extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-lg">
-        <div className="d-flex align-items-center">
+        <div className="d-flex nav-items align-items-center">
           <span className="navbar-text navbar-title">
             <Link
               onClick={this.toggleNav}
@@ -58,10 +58,11 @@ class Nav extends Component {
               </span>
             </li>
           </ul>
-          <span className="navbar-text description">
-           <em>Web, digital design, and social media.</em> 
-              </span>
+          <div className="description">
+           <em>Custom design for web and social media.</em> 
         </div>
+        </div> 
+        
       </nav>
     );
   }

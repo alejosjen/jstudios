@@ -1,31 +1,46 @@
+body {
+    background-image: url(../../full-bloom.png);
+    font-family: 'Alegreya', serif;
+}
 .homeBackground {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: rgb(4, 160, 255);
-    padding: 50px;
+    /* background-color: #000; */
+    padding: 21px;
     margin-bottom: 50px;
-}
-
-.row {
-    background-color: rgb(4, 160, 255);
-    margin: 0px;
 }
 
 .col {
     background-color: #fff;
 }
 
-.bottom-left-round { 
-    border-bottom-left-radius: 111px;
-    padding-top: 5%;
+.left { 
+    padding-top: 10%;
     padding-bottom: 10%;
     padding-left: 10%;
+    -webkit-box-shadow: 
+    inset 9px 6px 10px rgba(0,0,0,0.3),
+          9px 6px 10px rgba(0,0,0,.3); 
+    -moz-box-shadow: 
+    inset 9px 6px 10px rgba(0,0,0,.3),
+          9px 6px 10px rgba(0,0,0,0.3);
+    box-shadow: 9px 6px 10px rgba(0,0,0,.3);
 }
 
-.top-right-round {
-    border-top-right-radius: 111px;
+.right {
     display: flex;
     justify-content: center;
     align-items: center;
+    -webkit-box-shadow: 
+    inset 9px 6px 10px rgba(0,0,0,0.3),
+          9px 6px 10px rgba(0,0,0,0.3); 
+    -moz-box-shadow: 
+    inset 9px 6px 10px rgba(0,0,0,0.3),
+          9px 6px 10px rgba(0,0,0,0.3);
+    box-shadow: 9px 6px 10px rgba(0,0,0,.3);
+}
+
+p {
+    font-size: 1.3em;
 }

@@ -16,18 +16,13 @@ class Home extends Component {
                     <div className="container">
                         <div className="homeBackground">
                             <div className="row d-flex justify-content-center">
-                                <div className="col bottom-left-round">
+                                <div className="col left">
                                     <p>Welcome</p>
-                                    <p>Want an online presence for your business?</p>
-                                    <p>I'll teach you the tools you need.</p>
-                                    <p>We'll review how and where your business is being represented. Next we'll see where
-                                    it can be improved.
-                                </p>
+                                    <p>Need to improve your online presence?</p>
+                                    <p>I'll teach you the tools you need for your business.</p>
                                     <p>I'll meet you at your comfort level and guide you to the next.</p>
-                                    <p></p>
-                                    <p></p>
                                 </div>
-                                <div className="col top-right-round">
+                                <div className="col right">
                                     <img src={logo} className="img-fluid logo-large" alt="logo" />
                                 </div>
                             </div>
