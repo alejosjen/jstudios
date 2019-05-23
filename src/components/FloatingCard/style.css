@@ -1,23 +1,4 @@
-body {
-    /* background-image: url(../../regal.png); */
-    background-color: #000;
-    font-family: 'Alegreya', serif;
-}
-
-.homeBackground {
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* background-color: #000; */
-    padding: 21px;
-    margin-bottom: 50px;
-}
-
-.col {
-    background-color: #fff;
-}
-
-/* .left { 
+.left { 
     padding-top: 2%;
     padding-bottom: 10%;
     padding-left: 10%;
@@ -29,9 +10,9 @@ body {
     inset 13px 12px 10px rgba(0,0,0,.3),
           13px 12px 10px rgba(0,0,0,0.3);
     box-shadow: 13px 12px 10px rgba(0,0,0,.3);
-} */
+}
 
-/* .right {
+.right {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,9 +23,4 @@ body {
     inset 12px 14px 10px rgba(0,0,0,0.3),
           12px 14px 10px rgba(0,0,0,0.3);
     box-shadow: 12px 14px 10px rgba(0,0,0,.3);
-} */
-
-
-p {
-    font-size: 1.3em;
 }
