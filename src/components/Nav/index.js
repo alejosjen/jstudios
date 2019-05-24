@@ -6,15 +6,15 @@ import "./style.css";
 class Nav extends Component {
 
   state = {
-    // open: false,
+    open: false,
     width: window.innerWidth,
   };
 
   render() {
     return (
-      <div className="row top-row flex align-items-center justify-content-center">
+      <div className="row top-row flex align-items-center">
         <div className="col-sm-12 col-md-6">
-          <nav className="navbar navbar-expand-lg">
+          <nav className="navbar mt-3 navbar-expand-lg">
             <div className="d-flex nav-items align-items-center">
               <span className="navbar-text navbar-title">
                 <Link
@@ -25,6 +25,7 @@ class Nav extends Component {
                   <img src={logo} alt="logo" />
                 </Link>
               </span>
+              
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <span className="navbar-text">
@@ -64,11 +65,6 @@ class Nav extends Component {
             </div>
 
           </nav>
-        </div>
-        <div className="col-sm-12 col-md-6">
-          <div className="description">
-            <em>Custom design for web and social media.</em>
-          </div>
         </div>
 
       </div>

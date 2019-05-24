@@ -18,7 +18,7 @@ class Home extends Component {
 
                 <Slide left>
                     <div className="homeBackground">
-                            <Nav />
+                        <Nav />
 
                         <div className="row d-flex justify-content-center">
                             <LeftColumn>
@@ -30,6 +30,9 @@ class Home extends Component {
 
                             <RightColumn>
                                 <img src={logo} className="img-fluid logo-large" alt="logo" />
+                                <div className="description">
+                                    <em>Custom design for web and social media.</em>
+                                </div>
                             </RightColumn>
                         </div>
                     </div>

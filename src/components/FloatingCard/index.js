@@ -15,7 +15,7 @@ import "./style.css";
   // Right column of business card
   export function RightColumn(props) {
     return (
-      <div className="col right" {...props}>
+      <div className="col right flex flex-column" {...props}>
       </div>
     );
   }
