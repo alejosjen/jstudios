@@ -12,62 +12,73 @@ class Nav extends Component {
 
   render() {
     return (
-      <div className="row top-row flex align-items-center">
-        <div className="col-sm-12 col-md-6">
-          <nav className="navbar mt-3 navbar-expand-lg">
-            <div className="d-flex nav-items align-items-center">
-              <span className="navbar-text navbar-title">
-                <Link
-                  onClick={this.toggleNav}
-                  className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
-                  to="/"
-                >
-                  <img src={logo} alt="logo" />
-                </Link>
-              </span>
-              
-              <ul className="navbar-nav">
-                <li className="nav-item">
-                  <span className="navbar-text">
-                    <Link
-                      onClick={this.toggleNav}
-                      className={window.location.pathname === "/home" ? "nav-link active" : "nav-link"}
-                      to="/home"
-                    >
-                      Home
-              </Link>
-                  </span>
-                </li>
-                <li>
-                  <span className="navbar-text mx-3">
-                    <Link
-                      onClick={this.toggleNav}
-                      className={window.location.pathname === "/services" ? "nav-link active" : "nav-link"}
-                      to={`/services`}
-                    >
-                      Services
-              </Link>
-                  </span>
-                </li>
-                <li>
-                  <span className="navbar-text">
-                    <Link
-                      onClick={this.toggleNav}
-                      className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}
-                      to="/contact"
-                    >
-                      Contact
-              </Link>
-                  </span>
-                </li>
-              </ul>
+      <div className="row top-row">
+        <nav className="navbar navbar-light navbar-expand-md">
 
-            </div>
+          <span className="navbar-brand">
+            <Link
+              onClick={this.toggleNav}
+              className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
+              to="/"
+            >
+              <img src={logo} alt="logo" />
+            </Link>
+          </span>
+          <button
+            onClick={this.toggleNav}
+            className="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span className="navbar-toggler-icon" />
+          </button>
 
-          </nav>
-        </div>
+          <div className={`${this.state.open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
 
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <span className="navbar-text">
+                  <Link
+                    onClick={this.toggleNav}
+                    className={window.location.pathname === "/home" ? "nav-link active" : "nav-link"}
+                    to="/home"
+                  >
+                    Home
+              </Link>
+                </span>
+              </li>
+              <li>
+                <span className="navbar-text mx-3">
+                  <Link
+                    onClick={this.toggleNav}
+                    className={window.location.pathname === "/services" ? "nav-link active" : "nav-link"}
+                    to={`/consultation`}
+                  >
+                    Consultation
+              </Link>
+                </span>
+              </li>
+              <li>
+                <span className="navbar-text">
+                  <Link
+                    onClick={this.toggleNav}
+                    className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}
+                    to="/contact"
+                  >
+                    Contact
+              </Link>
+                </span>
+              </li>
+            </ul>
+
+          </div>
+        </nav>
       </div>
+
+
 
     );
   }

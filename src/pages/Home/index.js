@@ -11,15 +11,10 @@ class Home extends Component {
 
     render() {
         return (
-
-
-
             <div className="container">
-
                 <Slide left>
                     <div className="homeBackground">
                         <Nav />
-
                         <div className="row d-flex justify-content-center">
                             <LeftColumn>
                                 <p>Welcome</p>
@@ -27,7 +22,6 @@ class Home extends Component {
                                 <p>I'll teach you the tools you need for your business.</p>
                                 <p>I'll meet you at your comfort level and guide you to the next.</p>
                             </LeftColumn>
-
                             <RightColumn>
                                 <img src={logo} className="img-fluid logo-large" alt="logo" />
                                 <div className="description">
@@ -36,11 +30,8 @@ class Home extends Component {
                             </RightColumn>
                         </div>
                     </div>
-
                 </Slide>
             </div>
-
-
         )
     }
 }
