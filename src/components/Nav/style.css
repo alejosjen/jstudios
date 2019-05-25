@@ -6,22 +6,10 @@
   color: #006666;
 }
 
-nav {
-  background-color: #fff;
-  border-top-right-radius: 80px;
-  -webkit-box-shadow: 
-  inset 12px 14px 9px rgba(0,0,0,.5),
-        12px 14px 9px rgba(0,0,0,.5); 
-  -moz-box-shadow: 
-  inset 12px 14px 9px rgba(0,0,0,.5),
-        12px 14px 9px rgba(0,0,0,.5);
-  box-shadow: 12px 14px 9px rgba(0,0,0,.5);
-  width: 100%;
-}
-
 .navbar {
   padding-right: 9%;
   padding-top: 2%;
+  width: 100%;
 }
 
 .navbar-nav {
@@ -38,6 +26,5 @@ nav {
 }
 
 .top-row {
-  
   margin-top: 5%;
 }

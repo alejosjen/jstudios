@@ -35,45 +35,36 @@ class Nav extends Component {
           >
             <span className="navbar-toggler-icon" />
           </button>
-
           <div className={`${this.state.open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
-
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <span className="navbar-text">
-                  <Link
-                    onClick={this.toggleNav}
-                    className={window.location.pathname === "/home" ? "nav-link active" : "nav-link"}
-                    to="/home"
-                  >
-                    Home
-              </Link>
-                </span>
-              </li>
-              <li>
-                <span className="navbar-text mx-3">
-                  <Link
-                    onClick={this.toggleNav}
-                    className={window.location.pathname === "/services" ? "nav-link active" : "nav-link"}
-                    to={`/consultation`}
-                  >
-                    Consultation
-              </Link>
-                </span>
-              </li>
-              <li>
-                <span className="navbar-text">
-                  <Link
-                    onClick={this.toggleNav}
-                    className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}
-                    to="/contact"
-                  >
-                    Contact
-              </Link>
-                </span>
-              </li>
-            </ul>
-
+            <div className="navbar-nav">
+              <div className="nav-item">
+                <Link
+                  onClick={this.toggleNav}
+                  className={window.location.pathname === "/home" ? "nav-link active" : "nav-link"}
+                  to="/home"
+                >
+                  Home
+                 </Link>
+              </div>
+              <div className="nav-item mx-3">
+                <Link
+                  onClick={this.toggleNav}
+                  className={window.location.pathname === "/services" ? "nav-link active" : "nav-link"}
+                  to={`/consultation`}
+                >
+                  Consultation
+                 </Link>
+              </div>
+              <div className="nav-item">
+                <Link
+                  onClick={this.toggleNav}
+                  className={window.location.pathname === "/contact" ? "nav-link active" : "nav-link"}
+                  to="/contact"
+                >
+                  Contact
+                  </Link>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
